@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 export default function App() {
   const breadItems = Array.from({ length: 6 }).map((_, i) => ({
@@ -63,22 +63,27 @@ export default function App() {
       </motion.header>
 
       <main className="relative z-20 flex flex-col justify-center items-center min-h-screen px-4 pt-16">
-        {/* Video Section Centered */}
+        {/* Embedded OneDrive Video Section Centered */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
           className="w-full max-w-3xl mx-auto"
         >
-          <video
-            src="https://drive.google.com/uc?export=download&id=1O9tbk34qMrlcJb9OWCyyvQmjUBDeP1X9"
-            controls
-            autoPlay
-            loop
-            muted
-            poster="poster.jpg"
-            className="w-full rounded-2xl shadow-xl"
-          />
+          <div style={{ maxWidth: "1280px" }}>
+            <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
+              <iframe
+                src="https://wienercarrion-my.sharepoint.com/personal/a2022100237_uwiener_edu_pe/_layouts/15/embed.aspx?UniqueId=8c9ed172-ee93-4f31-9cd4-8bedf5e04a6e&embed=%7B%22af%22%3Atrue%2C%22ust%22%3Afalse%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+                width="1280"
+                height="720"
+                frameBorder="0"
+                scrolling="no"
+                allowFullScreen
+                title="video_ia_final.mp4"
+                style={{ border: "none", position: "absolute", top: 0, left: 0, right: 0, bottom: 0, height: "100%", maxWidth: "100%" }}
+              />
+            </div>
+          </div>
         </motion.div>
 
         {/* Content Section */}
