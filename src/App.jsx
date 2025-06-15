@@ -73,7 +73,7 @@ export default function App() {
           <div style={{ maxWidth: "1280px" }}>
             <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
               <iframe
-                src="https://drive.google.com/file/d/1CHEyLow_KKJnQFGXOpuJR9hfIsd_tPdi/preview"
+                src="https://drive.google.com/file/d/1CHEyLow_KKJnQFGXOpuJR9hfIsd_tPdi/preview?autoplay=1&loop=1"
                 width="1280"
                 height="720"
                 frameBorder="0"
