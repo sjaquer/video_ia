@@ -77,7 +77,6 @@ export default function App() {
                 width="1280"
                 height="720"
                 frameBorder="0"
-                allow="autoplay; fullscreen"
                 allowFullScreen
                 title="Panaderia Montoya Promo"
                 style={{ border: "none", position: "absolute", top: 0, left: 0, right: 0, bottom: 0, height: "100%", maxWidth: "100%" }}
