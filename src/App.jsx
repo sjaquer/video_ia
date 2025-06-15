@@ -71,7 +71,7 @@ export default function App() {
           className="w-full max-w-3xl mx-auto"
         >
           <video
-            src="https://drive.google.com/file/d/1O9tbk34qMrlcJb9OWCyyvQmjUBDeP1X9/view?usp=sharing"
+            src="https://drive.google.com/uc?export=download&id=1O9tbk34qMrlcJb9OWCyyvQmjUBDeP1X9"
             controls
             autoPlay
             loop
