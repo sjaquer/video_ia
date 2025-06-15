@@ -31,7 +31,7 @@ export default function App() {
         {breadItems.map(({ id, x, delay, duration }) => (
           <motion.img
             key={id}
-            src="https://cdn-icons-png.flaticon.com/512/685/685686.png"
+            src="pancarga.png"
             alt="bread doodle"
             initial={{ x, y: window.innerHeight + 50, opacity: 1 }}
             animate={{ x: Math.random() * window.innerWidth, y: -50, opacity: 0 }}
@@ -42,7 +42,7 @@ export default function App() {
         {smokeItems.map(({ id, x, delay, duration }) => (
           <motion.img
             key={id}
-            src="https://cdn-icons-png.flaticon.com/512/4380/4380323.png"
+            src="humo.png"
             alt="smoke doodle"
             initial={{ x, y: window.innerHeight + 50, opacity: 0.5 }}
             animate={{ x, y: -100, opacity: 0 }}
