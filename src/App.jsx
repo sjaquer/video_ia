@@ -63,7 +63,7 @@ export default function App() {
       </motion.header>
 
       <main className="relative z-20 flex flex-col justify-center items-center min-h-screen px-4 pt-16">
-        {/* Embedded OneDrive Video Section Centered */}
+        {/* Embedded Google Drive Video Section Centered */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -73,13 +73,13 @@ export default function App() {
           <div style={{ maxWidth: "1280px" }}>
             <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
               <iframe
-                src="https://wienercarrion-my.sharepoint.com/personal/a2022100237_uwiener_edu_pe/_layouts/15/embed.aspx?UniqueId=8c9ed172-ee93-4f31-9cd4-8bedf5e04a6e&embed=%7B%22af%22%3Atrue%2C%22ust%22%3Afalse%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+                src="https://drive.google.com/file/d/1CHEyLow_KKJnQFGXOpuJR9hfIsd_tPdi/preview"
                 width="1280"
                 height="720"
                 frameBorder="0"
-                scrolling="no"
+                allow="autoplay; fullscreen"
                 allowFullScreen
-                title="video_ia_final.mp4"
+                title="Panaderia Montoya Promo"
                 style={{ border: "none", position: "absolute", top: 0, left: 0, right: 0, bottom: 0, height: "100%", maxWidth: "100%" }}
               />
             </div>
