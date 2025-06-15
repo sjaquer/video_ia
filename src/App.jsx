@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import pancarga from "./pancarga.png";
+import humo from "./humo.png";
 
 export default function App() {
   const breadItems = Array.from({ length: 6 }).map((_, i) => ({
@@ -31,8 +33,8 @@ export default function App() {
         {breadItems.map(({ id, x, delay, duration }) => (
           <motion.img
             key={id}
-            src="pancarga.png"
-            alt="bread doodle"
+            src={pancarga}
+            alt="bread slice"
             initial={{ x, y: window.innerHeight + 50, opacity: 1 }}
             animate={{ x: Math.random() * window.innerWidth, y: -50, opacity: 0 }}
             transition={{ repeat: Infinity, duration, ease: 'linear', delay }}
@@ -42,8 +44,8 @@ export default function App() {
         {smokeItems.map(({ id, x, delay, duration }) => (
           <motion.img
             key={id}
-            src="humo.png"
-            alt="smoke doodle"
+            src={humo}
+            alt="smoke"
             initial={{ x, y: window.innerHeight + 50, opacity: 0.5 }}
             animate={{ x, y: -100, opacity: 0 }}
             transition={{ repeat: Infinity, duration, ease: 'linear', delay }}
@@ -63,26 +65,21 @@ export default function App() {
       </motion.header>
 
       <main className="relative z-20 flex flex-col justify-center items-center min-h-screen px-4 pt-16">
-        {/* Embedded Google Drive Video Section Centered */}
+        {/* Video Section Centered */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
           className="w-full max-w-3xl mx-auto"
         >
-          <div style={{ maxWidth: "1280px" }}>
-            <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
-              <iframe
-                src="https://drive.google.com/file/d/1CHEyLow_KKJnQFGXOpuJR9hfIsd_tPdi/preview?autoplay=1&loop=1"
-                width="1280"
-                height="720"
-                frameBorder="0"
-                allowFullScreen
-                title="Panaderia Montoya Promo"
-                style={{ border: "none", position: "absolute", top: 0, left: 0, right: 0, bottom: 0, height: "100%", maxWidth: "100%" }}
-              />
-            </div>
-          </div>
+          <video
+            src="video.mp4"
+            controls
+            loop
+            muted
+            poster={pancarga}
+            className="w-full rounded-2xl shadow-xl"
+          />
         </motion.div>
 
         {/* Content Section */}
